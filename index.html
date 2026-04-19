@@ -1,1273 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Divinestamp Pvt Ltd – Precision Aluminium Front Fork Outer Tube Manufacturer in Hosur, Tamil Nadu. ISO Certified VMC Machining.">
-<meta name="keywords" content="Aluminium Front Fork Outer Tube Manufacturer Hosur, VMC Machining Tamil Nadu, ISO Certified Aluminium Components, Gabriel India Supplier">
-<title>Divinestamp Pvt Ltd | Precision Aluminium Manufacturing | Hosur</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DivineStamp Pvt Ltd builds reliable industrial infrastructure solutions with precision engineering.">
+  <title>DivineStamp Industries | Precision in every process</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <style>
+    :root {
+      --bg-dark: #11161e;
+      --text: #f4f5f7;
+      --muted: #c9ced5;
+      --accent: #f25423;
+      --accent-soft: #fdf1eb;
+      --glass: rgba(17, 22, 30, 0.52);
+      --glass-strong: rgba(17, 22, 30, 0.72);
+    }
 
-<link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0D1B2A;--navy2:#1A2E44;--navy3:#243B55;--silver:#8D99A8;--silver2:#C5CDD6;--silver3:#EEF1F4;--orange:#E8500A;--orange2:#F07340;--white:#fff;--t1:#0D1B2A;--t2:#3D5168;--t3:#6B7E93;--success:#1D9E75;--warn:#BA7517;--danger:#E24B4A}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:"Barlow",sans-serif;color:var(--t1);background:var(--white);overflow-x:hidden}
-::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#0D1B2A}::-webkit-scrollbar-thumb{background:var(--orange);border-radius:3px}
+    body {
+      min-height: 100vh;
+      font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, #b08f93 0%, #382935 48%, #1c0f11 100%);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
 
-/* ===== NAV ===== */
-nav{position:fixed;top:0;left:0;right:0;z-index:500;background:rgba(13,27,42,0.98);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 4%;height:68px;border-bottom:2px solid var(--orange)}
-.nlogo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nlogo img{height:42px;width:auto}
-.nname{font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:900;color:#fff;letter-spacing:2px;line-height:1}
-.nsub{font-size:9px;letter-spacing:3px;color:var(--silver);text-transform:uppercase}
-.nlinks{display:flex;list-style:none;align-items:center}
-.nlinks a{color:var(--silver2);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:0 12px;height:68px;display:flex;align-items:center;transition:.2s;border-bottom:2px solid transparent;margin-bottom:-2px}
-.nlinks a:hover,.nlinks a.active{color:#fff;border-bottom-color:var(--orange)}
-.ncta{background:var(--orange)!important;color:#fff!important;padding:0 18px!important;border-bottom:none!important;margin-bottom:0!important;border-radius:2px}
-.ncta:hover{background:var(--orange2)!important}
-.nadmin{background:rgba(255,255,255,0.08)!important;color:var(--silver2)!important;padding:0 14px!important;border-bottom:none!important;font-size:10px!important;letter-spacing:2px!important;border-radius:2px}
-.nadmin:hover{background:rgba(255,255,255,0.15)!important;color:#fff!important}
+    .shell {
+      width: min(1180px, 100%);
+      min-height: 82vh;
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+      background: #0f1115;
+    }
 
-/* ===== HERO ===== */
-.hero{min-height:100vh;background:var(--navy);display:flex;align-items:center;position:relative;overflow:hidden;padding-top:68px}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(232,80,10,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(232,80,10,0.05) 1px,transparent 1px);background-size:50px 50px}
-.hero-diag{position:absolute;right:-60px;top:0;width:55%;height:100%;background:linear-gradient(140deg,transparent 35%,rgba(232,80,10,0.05) 100%);transform:skewX(-6deg)}
-.hero-strip{position:absolute;left:4%;top:0;width:2px;height:100%;background:linear-gradient(to bottom,transparent,var(--orange) 30%,var(--orange) 70%,transparent)}
-.hero-inner{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:60px 4%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;width:100%}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,80,10,0.12);border:1px solid rgba(232,80,10,0.35);color:var(--orange2);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 14px;border-radius:2px;margin-bottom:22px}
-.pulse{width:7px;height:7px;background:var(--orange);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
-.hero h1{font-family:"Barlow Condensed",sans-serif;font-size:clamp(40px,6.5vw,76px);font-weight:900;line-height:.95;color:#fff;letter-spacing:-1px;margin-bottom:24px}
-.hero h1 .hl{color:var(--orange)}
-.hero h1 .thin{font-weight:300;letter-spacing:5px;font-size:.5em;display:block;color:var(--silver2);margin-bottom:6px;text-transform:uppercase}
-.hero-desc{font-size:15px;line-height:1.85;color:var(--silver2);margin-bottom:32px;max-width:460px}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px}
-.btn-p{background:var(--orange);color:#fff;text-decoration:none;padding:13px 30px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-radius:2px;transition:.2s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;font-family:"Barlow",sans-serif}
-.btn-p:hover{background:var(--orange2);transform:translateY(-2px)}
-.btn-o{border:1.5px solid rgba(255,255,255,0.25);color:var(--silver2);text-decoration:none;padding:13px 30px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-radius:2px;transition:.2s;display:inline-flex;align-items:center;gap:8px;background:transparent;cursor:pointer;font-family:"Barlow",sans-serif}
-.btn-o:hover{border-color:#fff;color:#fff}
-.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,0.07)}
-.hstat{padding:18px;border-right:1px solid rgba(255,255,255,0.07)}
-.hstat:last-child{border-right:none}
-.hstat-n{font-family:"Barlow Condensed",sans-serif;font-size:38px;font-weight:900;color:var(--orange);line-height:1}
-.hstat-l{font-size:10px;color:var(--silver);letter-spacing:1.5px;text-transform:uppercase;margin-top:3px}
-.hero-right{display:flex;flex-direction:column;gap:12px}
-.hvc{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:20px;border-radius:2px;display:flex;gap:14px;align-items:flex-start;transition:.3s}
-.hvc:hover{border-color:rgba(232,80,10,0.4);background:rgba(232,80,10,0.04)}
-.hvc-icon{width:44px;height:44px;background:rgba(232,80,10,0.12);border:1px solid rgba(232,80,10,0.2);border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.hvc-icon svg{width:20px;height:20px;fill:var(--orange)}
-.hvc-title{font-family:"Barlow Condensed",sans-serif;font-size:17px;font-weight:700;color:#fff;letter-spacing:.5px;margin-bottom:3px}
-.hvc-desc{font-size:12px;color:var(--silver);line-height:1.55}
-.loc-bar{display:flex;align-items:center;gap:7px;color:var(--silver);font-size:11px;margin-top:10px}
-.loc-bar svg{width:13px;height:13px;fill:var(--orange);flex-shrink:0}
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(180deg, rgba(12, 16, 23, 0.58) 0%, rgba(12, 16, 23, 0.67) 50%, rgba(12, 16, 23, 0.88) 100%),
+        url("https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1920&q=80");
+      background-size: cover;
+      background-position: center;
+      filter: saturate(0.9);
+      transform: scale(1.01);
+    }
 
-/* ===== SECTIONS ===== */
-section{padding:88px 4%}
-.container{max-width:1280px;margin:0 auto}
-.slabel{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--orange);display:block;margin-bottom:8px}
-.stitle{font-family:"Barlow Condensed",sans-serif;font-size:clamp(30px,5vw,54px);font-weight:900;line-height:1;color:var(--navy);letter-spacing:-.5px;margin-bottom:16px}
-.sbar{width:40px;height:3px;background:var(--orange);margin-bottom:18px}
-.sdesc{font-size:15px;line-height:1.85;color:var(--t2);max-width:580px}
-.stitle-w{color:#fff}.sdesc-w{color:var(--silver2)}
+    .topbar {
+      position: relative;
+      z-index: 2;
+      margin: 1.5rem;
+      padding: 0.95rem 1.2rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: var(--glass);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
 
-/* ===== ABOUT ===== */
-.about{background:#fff}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-.deco-num{font-family:"Barlow Condensed",sans-serif;font-size:160px;font-weight:900;color:rgba(13,27,42,0.04);line-height:1;margin-bottom:-36px}
-.about-txt{font-size:15px;line-height:1.9;color:var(--t2);margin-bottom:16px}
-.about-pull{border-left:3px solid var(--orange);padding-left:20px;margin:26px 0;border-radius:0}
-.about-pull p{font-size:17px;font-style:italic;color:var(--navy);line-height:1.65;font-weight:500}
-.leader{background:var(--silver3);padding:22px;border-radius:2px;display:flex;gap:14px;align-items:center;margin-top:24px}
-.leader-av{width:56px;height:56px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:700;color:#fff;flex-shrink:0}
-.leader-name{font-size:15px;font-weight:600;color:var(--navy)}
-.leader-role{font-size:12px;color:var(--t3)}
-.fact-table{width:100%;border-collapse:collapse;margin-bottom:22px}
-.fact-table td{padding:10px 0;font-size:13px;border-bottom:1px solid var(--silver3)}
-.fact-table td:first-child{color:var(--t3);width:42%;font-size:11px;letter-spacing:.5px;text-transform:uppercase}
-.fact-table td:last-child{color:var(--navy);font-weight:600}
-.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px}
-.mv{border:1px solid var(--silver3);padding:20px;border-radius:2px;border-top:3px solid var(--orange)}
-.mv h3{font-family:"Barlow Condensed",sans-serif;font-size:19px;font-weight:700;color:var(--navy);margin-bottom:8px}
-.mv p{font-size:13px;color:var(--t2);line-height:1.7}
-.chips{display:flex;flex-wrap:wrap;gap:7px}
-.chip{background:var(--navy);color:var(--silver2);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;border-radius:2px}
+    .brand {
+      font-size: 0.95rem;
+      letter-spacing: 0.2px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
 
-/* ===== CAPABILITIES STRIP ===== */
-.caps{background:var(--silver3);padding:64px 4%}
-.caps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1280px;margin:48px auto 0}
-.cap-card{background:#fff;border:1px solid var(--silver2);padding:28px 22px;border-radius:2px;text-align:center;transition:.2s}
-.cap-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(13,27,42,0.1)}
-.cap-card h4{font-family:"Barlow Condensed",sans-serif;font-size:19px;font-weight:700;color:var(--navy);margin:16px 0 8px}
-.cap-card p{font-size:12px;color:var(--t3);line-height:1.6}
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.35rem;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
 
-/* ===== PRODUCTS ===== */
-.products{background:var(--silver3)}
-.prod-top{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-bottom:48px;align-items:start}
-.pf-list{display:flex;flex-direction:column;gap:12px}
-.pf{background:#fff;border:1px solid var(--silver3);padding:16px 18px;border-radius:2px;display:flex;gap:12px;align-items:flex-start}
-.pf-dot{width:8px;height:8px;background:var(--orange);border-radius:50%;margin-top:4px;flex-shrink:0}
-.pf-title{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:2px}
-.pf-desc{font-size:12px;color:var(--t3);line-height:1.5}
-/* dynamic product cards */
-.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--silver2)}
-.pc{background:#fff;border-right:1px solid var(--silver2);overflow:hidden;transition:.2s}
-.pc:last-child{border-right:none}
-.pc:hover{box-shadow:0 8px 24px rgba(13,27,42,0.1)}
-.pc-head{padding:28px 24px;background:var(--navy);position:relative;overflow:hidden}
-.pc-head.featured{background:var(--orange)}
-.pc-tag{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:6px}
-.pc-model{font-family:"Barlow Condensed",sans-serif;font-size:48px;font-weight:900;color:#fff;line-height:1}
-.pc-body{padding:24px}
-.pc-desc{font-size:13px;color:var(--t2);line-height:1.7;margin-bottom:18px}
-.pc-feats{list-style:none}
-.pc-feats li{font-size:12px;color:var(--t2);padding:6px 0;border-bottom:1px solid var(--silver3);display:flex;gap:7px;align-items:flex-start;line-height:1.5}
-.pc-feats li::before{content:"";width:5px;height:5px;background:var(--orange);border-radius:50%;margin-top:4px;flex-shrink:0}
-.spec-table{width:100%;border-collapse:collapse;margin-top:36px;background:#fff;border:1px solid var(--silver2)}
-.spec-table th{background:var(--navy);color:#fff;font-family:"Barlow Condensed",sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:12px 18px;text-align:left}
-.spec-table td{padding:12px 18px;font-size:13px;color:var(--t2);border-bottom:1px solid var(--silver3)}
-.spec-table tr:last-child td{border-bottom:none}
-.spec-table tr:nth-child(even) td{background:var(--silver3)}
-.proc-steps{display:flex;gap:0;position:relative;margin-top:48px}
-.proc-steps::before{content:"";position:absolute;top:26px;left:28px;right:28px;height:2px;background:linear-gradient(to right,var(--orange),var(--navy));z-index:0}
-.pstep{flex:1;text-align:center;position:relative;z-index:1}
-.pstep-n{width:52px;height:52px;background:var(--navy);border:2px solid var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:"Barlow Condensed",sans-serif;font-size:19px;font-weight:800;color:var(--orange)}
-.pstep-title{font-size:11px;font-weight:700;color:var(--navy)}
-.pstep-desc{font-size:10px;color:var(--t3);margin-top:2px;line-height:1.5;padding:0 3px}
+    .btn {
+      border: 1px solid transparent;
+      border-radius: 2px;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
 
-/* ===== INFRA ===== */
-.infra{background:var(--navy);padding:88px 4%}
-.infra-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:44px;align-items:start}
-.m-list h3{font-family:"Barlow Condensed",sans-serif;font-size:16px;font-weight:700;color:var(--orange);letter-spacing:2px;text-transform:uppercase;margin-bottom:22px}
-.mach{display:flex;gap:14px;align-items:flex-start;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
-.mach:last-child{border-bottom:none}
-.micon{width:50px;height:50px;background:rgba(232,80,10,0.1);border:1px solid rgba(232,80,10,0.22);border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.micon svg{width:22px;height:22px;fill:var(--orange)}
-.mname{font-size:14px;font-weight:600;color:#fff;margin-bottom:3px}
-.mdesc{font-size:12px;color:var(--silver);line-height:1.55}
-.istats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.istat{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);padding:22px;border-radius:2px}
-.istat-v{font-family:"Barlow Condensed",sans-serif;font-size:48px;font-weight:900;color:var(--orange);line-height:1}
-.istat-l{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--silver);margin-top:6px}
-.istat-s{font-size:11px;color:var(--silver);margin-top:2px}
-.cap-blk{background:rgba(232,80,10,0.08);border:1px solid rgba(232,80,10,0.18);padding:24px;border-radius:2px;margin-top:12px}
-.cap-v{font-family:"Barlow Condensed",sans-serif;font-size:44px;font-weight:900;color:#fff;line-height:1}
-.cap-s{font-size:11px;color:var(--silver);margin-top:5px}
-.cap-bar{height:4px;background:rgba(255,255,255,0.08);border-radius:2px;margin-top:16px;overflow:hidden}
-.cap-fill{height:100%;width:75%;background:var(--orange);border-radius:2px}
+    .btn-contact {
+      background: var(--accent);
+      color: #fff;
+    }
 
-/* ===== QUALITY ===== */
-.quality{background:#fff}
-.q-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:44px;align-items:center}
-.q-pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.qp{border:1px solid var(--silver3);padding:22px;border-radius:2px;border-top:3px solid var(--orange);transition:.2s}
-.qp:hover{box-shadow:0 6px 20px rgba(13,27,42,0.07)}
-.qp-icon{width:38px;height:38px;background:var(--silver3);border-radius:3px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
-.qp-icon svg{width:18px;height:18px;fill:var(--navy)}
-.qp-title{font-family:"Barlow Condensed",sans-serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:6px}
-.qp-desc{font-size:12px;color:var(--t3);line-height:1.6}
-.q-stmt{background:var(--navy);padding:44px}
-.q-quote{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:24px}
-.q-quote span{color:var(--orange)}
-.q-checks{list-style:none}
-.q-checks li{display:flex;gap:10px;align-items:center;color:var(--silver2);font-size:13px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
-.q-checks li:last-child{border-bottom:none}
-.q-checks li::before{content:"✓";color:var(--orange);font-weight:700;font-size:14px;flex-shrink:0}
+    .btn-contact:hover {
+      background: #e84918;
+    }
 
-/* ===== ISO STRIP ===== */
-.iso-strip{background:var(--silver3);border-top:1px solid var(--silver2);border-bottom:1px solid var(--silver2);padding:24px 4%}
-.iso-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
-.iso-badge{display:flex;align-items:center;gap:14px}
-.iso-ico{width:52px;height:52px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center}
-.iso-ico svg{width:26px;height:26px;fill:var(--orange)}
-.iso-title{font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:800;color:var(--navy)}
-.iso-sub{font-size:11px;color:var(--t3)}
-.iso-tags{display:flex;gap:7px;flex-wrap:wrap}
-.iso-tag{background:var(--navy);color:var(--silver2);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:2px}
+    .content {
+      position: relative;
+      z-index: 2;
+      height: calc(82vh - 96px);
+      min-height: 490px;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 2.4rem 2.6rem;
+    }
 
-/* ===== CLIENTS ===== */
-.clients{background:var(--silver3)}
-.cli-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:44px;align-items:start}
-.cli-card{background:#fff;border:1px solid var(--silver2);padding:44px;border-radius:2px;text-align:center}
-.gab-logo{width:100px;height:100px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
-.gab-text{font-family:"Barlow Condensed",sans-serif;font-size:28px;font-weight:900;color:var(--orange);letter-spacing:2px}
-.cli-name{font-family:"Barlow Condensed",sans-serif;font-size:28px;font-weight:800;color:var(--navy);margin-bottom:5px}
-.cli-cat{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--t3);margin-bottom:18px}
-.cli-desc{font-size:13px;color:var(--t2);line-height:1.7}
-.cli-tags{display:flex;gap:7px;justify-content:center;margin-top:18px;flex-wrap:wrap}
-.ctag{background:var(--silver3);color:var(--navy);font-size:9px;font-weight:700;padding:4px 10px;border-radius:2px;letter-spacing:1px}
-.cli-right h3{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:800;color:var(--navy);margin-bottom:14px}
-.cli-right p{font-size:14px;line-height:1.8;color:var(--t2);margin-bottom:12px}
-.sup-list{list-style:none;margin-top:20px}
-.sup-list li{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--silver2);font-size:13px;color:var(--t2);line-height:1.5}
-.sup-list li::before{content:"";width:7px;height:7px;background:var(--orange);border-radius:50%;margin-top:4px;flex-shrink:0}
+    .copy {
+      max-width: 550px;
+      background: linear-gradient(90deg, var(--glass-strong), transparent);
+      padding: 1.2rem 1.1rem 1.1rem 0.9rem;
+      border-radius: 2px;
+    }
 
-/* ===== CAREERS ===== */
-.careers{background:var(--navy2)}
-.jobs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-.jcard{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:26px;border-radius:2px;transition:.2s;position:relative;overflow:hidden}
-.jcard::before{content:"";position:absolute;top:0;left:0;width:2px;height:0;background:var(--orange);transition:height .3s}
-.jcard:hover::before{height:100%}
-.jcard:hover{border-color:rgba(232,80,10,0.25)}
-.jtype{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
-.jtitle{font-family:"Barlow Condensed",sans-serif;font-size:28px;font-weight:800;color:#fff;margin-bottom:10px}
-.jdesc{font-size:12px;color:var(--silver);line-height:1.65;margin-bottom:16px}
-.jtags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:18px}
-.jtag{background:rgba(255,255,255,0.06);color:var(--silver2);font-size:10px;padding:3px 9px;border-radius:2px}
-.japply{display:inline-flex;align-items:center;gap:5px;color:var(--orange);font-size:12px;font-weight:700;text-decoration:none;letter-spacing:.5px;background:none;border:none;cursor:pointer;font-family:"Barlow",sans-serif;padding:0}
-.japply:after{content:"→"}
-.careers-cta{margin-top:36px;background:rgba(232,80,10,0.08);border:1px solid rgba(232,80,10,0.18);padding:28px 36px;border-radius:2px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px}
-.careers-cta p{font-size:17px;font-weight:500;color:#fff}
-.careers-cta span{font-size:12px;color:var(--silver);display:block;margin-top:3px}
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
 
-/* ===== CONTACT / INQUIRY ===== */
-.contact{background:#fff}
-.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:44px;align-items:start}
-.cinfo h3{font-family:"Barlow Condensed",sans-serif;font-size:24px;font-weight:800;color:var(--navy);margin-bottom:22px}
-.citem{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--silver3)}
-.cico{width:40px;height:40px;background:var(--silver3);border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.cico svg{width:16px;height:16px;fill:var(--navy)}
-.citem-label{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:2px}
-.citem-val{font-size:13px;color:var(--navy);font-weight:600}
-.citem-sub{font-size:11px;color:var(--t3)}
-.wa-btn{display:flex;align-items:center;gap:9px;background:#25D366;color:#fff;padding:13px 22px;border-radius:2px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;margin-top:18px;transition:.2s;width:fit-content;border:none;cursor:pointer;font-family:"Barlow",sans-serif}
-.wa-btn:hover{background:#1aab52;transform:translateY(-2px)}
-.wa-btn svg{width:16px;height:16px;fill:#fff}
-.map-box{margin-top:20px;background:var(--silver3);border:1px solid var(--silver2);border-radius:2px}
-.map-inner{height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
-.map-inner svg{width:30px;height:30px;fill:var(--orange)}
-.map-inner p{font-size:12px;color:var(--t3)}
-.map-inner a{font-size:12px;color:var(--orange);font-weight:700;text-decoration:none}
-.form-box{background:var(--silver3);padding:36px;border-radius:2px}
-.form-box h3{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:800;color:var(--navy);margin-bottom:22px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.fg{margin-bottom:12px}
-.fg label{display:block;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--t2);margin-bottom:6px}
-.fg input,.fg select,.fg textarea{width:100%;background:#fff;border:1px solid var(--silver2);padding:11px 13px;font-size:13px;font-family:"Barlow",sans-serif;color:var(--navy);border-radius:2px;outline:none;transition:.2s}
-.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--orange)}
-.fg textarea{height:80px;resize:vertical}
-.fsub{width:100%;background:var(--orange);color:#fff;border:none;padding:13px;font-size:11px;font-family:"Barlow",sans-serif;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:.2s;margin-top:3px}
-.fsub:hover{background:var(--orange2)}
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
 
-/* ===== FOOTER ===== */
-footer{background:var(--navy);padding:56px 4% 24px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;max-width:1280px;margin:0 auto;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,0.06)}
-.fbrand-name{font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:900;color:#fff;letter-spacing:2px;display:block;margin-bottom:10px}
-.fbrand-desc{font-size:12px;color:var(--silver);line-height:1.8;max-width:270px}
-.fbadges{display:flex;gap:7px;margin-top:18px;flex-wrap:wrap}
-.fbadge{background:rgba(232,80,10,0.12);border:1px solid rgba(232,80,10,0.22);color:var(--orange);font-size:9px;font-weight:700;letter-spacing:2px;padding:4px 10px;border-radius:2px}
-.fcol h4{font-family:"Barlow Condensed",sans-serif;font-size:13px;font-weight:700;color:#fff;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
-.fcol ul{list-style:none}
-.fcol ul li{padding:4px 0}
-.fcol ul li a{color:var(--silver);font-size:12px;text-decoration:none;transition:.2s}
-.fcol ul li a:hover{color:var(--orange)}
-.footer-bottom{max-width:1280px;margin:0 auto;padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.footer-bottom p{font-size:11px;color:var(--silver)}
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.4rem);
+      line-height: 0.98;
+      margin-bottom: 1.1rem;
+      letter-spacing: -1px;
+    }
 
-/* ===== ADMIN PANEL ===== */
-.admin-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.7);overflow-y:auto}
-.admin-overlay.open{display:flex;flex-direction:column}
-.admin-panel{background:#fff;min-height:100vh;width:100%}
-.admin-bar{background:var(--navy);padding:0 4%;height:60px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--orange);position:sticky;top:0;z-index:10}
-.admin-title{font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:800;color:#fff;letter-spacing:1px;display:flex;align-items:center;gap:12px}
-.admin-title svg{width:20px;height:20px;fill:var(--orange)}
-.admin-close{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:#fff;padding:7px 16px;border-radius:2px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;font-family:"Barlow",sans-serif}
-.admin-body{padding:32px 4%;max-width:1280px;margin:0 auto}
-.admin-tabs{display:flex;gap:0;border-bottom:1px solid var(--silver3);margin-bottom:32px}
-.atab{background:none;border:none;padding:12px 20px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:"Barlow",sans-serif;transition:.2s}
-.atab:hover{color:var(--navy)}
-.atab.active{color:var(--orange);border-bottom-color:var(--orange)}
-.admin-section{display:none}
-.admin-section.active{display:block}
-.admin-section h2{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:800;color:var(--navy);margin-bottom:24px}
-.a-table{width:100%;border-collapse:collapse;margin-bottom:28px}
-.a-table th{background:var(--silver3);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t2);padding:10px 14px;text-align:left;border-bottom:1px solid var(--silver2)}
-.a-table td{padding:12px 14px;font-size:13px;color:var(--t2);border-bottom:1px solid var(--silver3)}
-.a-table tr:hover td{background:var(--silver3)}
-.a-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:1px;padding:3px 8px;border-radius:2px;text-transform:uppercase}
-.badge-new{background:rgba(29,158,117,0.12);color:var(--success)}
-.badge-pend{background:rgba(186,117,23,0.12);color:var(--warn)}
-.badge-read{background:rgba(141,153,168,0.12);color:var(--silver)}
-.badge-feat{background:rgba(232,80,10,0.12);color:var(--orange)}
-.a-btn{background:none;border:1px solid var(--silver2);color:var(--t2);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:2px;cursor:pointer;font-family:"Barlow",sans-serif;transition:.2s}
-.a-btn:hover{border-color:var(--orange);color:var(--orange)}
-.a-btn.danger{border-color:rgba(226,75,74,0.3);color:var(--danger)}
-.a-btn.danger:hover{border-color:var(--danger)}
-.a-form{background:var(--silver3);padding:24px;border-radius:3px;margin-bottom:28px}
-.a-form h3{font-family:"Barlow Condensed",sans-serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:18px}
-.a-frow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:14px}
-.a-fg{display:flex;flex-direction:column;gap:5px}
-.a-fg label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--t2)}
-.a-fg input,.a-fg select,.a-fg textarea{background:#fff;border:1px solid var(--silver2);padding:9px 12px;font-size:13px;font-family:"Barlow",sans-serif;color:var(--navy);border-radius:2px;outline:none}
-.a-fg input:focus,.a-fg select:focus{border-color:var(--orange)}
-.a-fg textarea{height:70px;resize:vertical}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:32px}
-.stat-card{background:var(--silver3);padding:20px;border-radius:2px;border-top:3px solid var(--orange)}
-.stat-card .sv{font-family:"Barlow Condensed",sans-serif;font-size:40px;font-weight:900;color:var(--navy);line-height:1}
-.stat-card .sl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--t3);margin-top:4px}
-.notify{position:fixed;top:80px;right:24px;z-index:2000;background:var(--navy);color:#fff;padding:14px 20px;border-radius:3px;font-size:13px;font-weight:500;border-left:3px solid var(--orange);transform:translateX(120%);transition:.3s;max-width:320px}
-.notify.show{transform:translateX(0)}
-.notify.success{border-left-color:var(--success)}
-.notify.error{border-left-color:var(--danger)}
+    .sub {
+      color: var(--muted);
+      max-width: 470px;
+      font-size: 1.12rem;
+      line-height: 1.45;
+      margin-bottom: 1.55rem;
+    }
 
-/* ===== INQUIRY MODAL ===== */
-.modal-overlay{display:none;position:fixed;inset:0;z-index:800;background:rgba(0,0,0,0.6)}
-.modal-overlay.open{display:flex;align-items:center;justify-content:center}
-.modal{background:#fff;width:90%;max-width:520px;border-radius:3px;overflow:hidden}
-.modal-head{background:var(--navy);padding:20px 24px;display:flex;align-items:center;justify-content:space-between}
-.modal-head h3{font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:800;color:#fff}
-.modal-close{background:none;border:none;color:var(--silver);font-size:20px;cursor:pointer;line-height:1;padding:0}
-.modal-body{padding:24px}
+    .actions {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
 
-/* ===== FLOATING WA ===== */
-.wa-float{position:fixed;bottom:26px;right:26px;z-index:700;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,0.4);text-decoration:none;transition:.2s}
-.wa-float:hover{transform:scale(1.1)}
-.wa-float svg{width:28px;height:28px;fill:#fff}
+    .btn-light {
+      background: #fff;
+      color: #1a2029;
+    }
 
-/* ===== RESPONSIVE ===== */
-@media(max-width:960px){
-  .hero-inner,.about-grid,.prod-top,.infra-layout,.q-grid,.cli-grid,.cont-grid,.footer-grid{grid-template-columns:1fr}
-  .prod-grid{grid-template-columns:1fr}
-  .pc{border-right:none;border-bottom:1px solid var(--silver2)}
-  .mv-grid,.frow,.caps-grid,.q-pillars,.jobs-grid{grid-template-columns:1fr 1fr}
-  .nlinks{display:none}
-  .proc-steps::before{display:none}
-  .proc-steps{flex-wrap:wrap}
-  .pstep{width:33%}
-  .istats{grid-template-columns:1fr 1fr}
-  .stats-grid,.a-frow{grid-template-columns:1fr 1fr}
-}
-@media(max-width:600px){
-  .mv-grid,.frow,.caps-grid,.q-pillars,.jobs-grid,.istats,.stats-grid,.a-frow{grid-template-columns:1fr}
-}
-</style>
+    .btn-light:hover {
+      background: #edf0f4;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-ghost:hover {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 900px) {
+      .topbar {
+        flex-wrap: wrap;
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      nav ul {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .content {
+        padding: 0 1.2rem 1.6rem;
+      }
+    }
+
+    @media (max-width: 620px) {
+      body {
+        padding: 0.8rem;
+      }
+
+      .topbar {
+        margin: 0.8rem;
+      }
+
+      nav ul {
+        font-size: 0.74rem;
+      }
+
+      .sub {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <main class="shell">
+    <div class="hero-image" role="img" aria-label="Industrial production facility"></div>
 
-<!-- NOTIFICATION TOAST -->
-<div class="notify" id="notify"></div>
-
-<!-- NAV -->
-<nav>
-  <a href="#home" class="nlogo">
-    <img src="data:image/jpeg;base64,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" alt="DSPL Logo">
-    <div><div class="nname">DIVINESTAMP</div><div class="nsub">Adding Excellence</div></div>
-  </a>
-  <ul class="nlinks">
-    <li><a href="#home" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#infra">Infrastructure</a></li>
-    <li><a href="#quality">Quality</a></li>
-    <li><a href="#clients">Clients</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#contact" class="ncta">Get Quote</a></li>
-    <li><a href="#" class="nadmin" onclick="openAdmin();return false;">&#9776; Admin</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-grid"></div>
-  <div class="hero-diag"></div>
-  <div class="hero-strip"></div>
-  <div class="hero-inner">
-    <div>
-      <div class="hero-badge"><span class="pulse"></span> ISO Certified Manufacturing &nbsp;·&nbsp; Est. Feb 2025 &nbsp;·&nbsp; Hosur, TN</div>
-      <h1><span class="thin">Precision Aluminium</span>Engineering<br><span class="hl">Strength.</span><br>Delivering Trust.</h1>
-      <p class="hero-desc" id="hero-desc">Divinestamp manufactures high-precision aluminium Front Fork Outer Tubes for two-wheeler suspension systems using advanced VMC machining. Trusted by Gabriel India — delivered on time, every time.</p>
-      <div class="hero-btns">
-        <button class="btn-p" onclick="openInquiry()">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          Request a Quote
-        </button>
-        <a href="#products" class="btn-o">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-          View Products
-        </a>
-      </div>
-      <div class="hero-stats">
-        <div class="hstat"><div class="hstat-n" id="stat-models">3+</div><div class="hstat-l">Product Models</div></div>
-        <div class="hstat"><div class="hstat-n" id="stat-cap">&#8377;1.2Cr</div><div class="hstat-l">Monthly Capacity</div></div>
-        <div class="hstat"><div class="hstat-n" id="stat-team">70+</div><div class="hstat-l">Skilled Team</div></div>
-      </div>
-      <div class="loc-bar">
-        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        QQJX+322, 1st Cross Rd, Ezhil Nagar, Begepalli, Hosur, Tamil Nadu 635126
-      </div>
-    </div>
-    <div class="hero-right">
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:24px;border-radius:2px;text-align:center">
-        <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-height:200px">
-          <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(232,80,10,0.07)" stroke-width="0.5"/></pattern></defs>
-          <rect width="320" height="200" fill="url(#g)" rx="2"/>
-          <rect x="58" y="25" width="40" height="152" rx="6" fill="#1A2E44" stroke="#E8500A" stroke-width="1.5"/>
-          <rect x="66" y="33" width="24" height="136" rx="4" fill="#243B55"/>
-          <rect x="58" y="55" width="40" height="5" rx="2" fill="#E8500A" opacity=".8"/>
-          <rect x="58" y="98" width="40" height="3" rx="1" fill="#E8500A" opacity=".5"/>
-          <rect x="58" y="135" width="40" height="5" rx="2" fill="#E8500A" opacity=".8"/>
-          <rect x="222" y="25" width="40" height="152" rx="6" fill="#1A2E44" stroke="#E8500A" stroke-width="1.5"/>
-          <rect x="230" y="33" width="24" height="136" rx="4" fill="#243B55"/>
-          <rect x="222" y="55" width="40" height="5" rx="2" fill="#E8500A" opacity=".8"/>
-          <rect x="222" y="98" width="40" height="3" rx="1" fill="#E8500A" opacity=".5"/>
-          <rect x="222" y="135" width="40" height="5" rx="2" fill="#E8500A" opacity=".8"/>
-          <rect x="98" y="50" width="124" height="16" rx="4" fill="#1A2E44" stroke="#E8500A" stroke-width="1"/>
-          <rect x="98" y="140" width="124" height="16" rx="4" fill="#1A2E44" stroke="#E8500A" stroke-width="1"/>
-          <rect x="148" y="66" width="24" height="74" rx="4" fill="#243B55" stroke="#8D99A8" stroke-width="1"/>
-          <line x1="28" y1="25" x2="28" y2="177" stroke="#E8500A" stroke-width=".8" stroke-dasharray="3,3"/>
-          <line x1="23" y1="25" x2="33" y2="25" stroke="#E8500A" stroke-width="1.5"/>
-          <line x1="23" y1="177" x2="33" y2="177" stroke="#E8500A" stroke-width="1.5"/>
-          <text x="17" y="105" fill="#E8500A" font-size="8" font-family="monospace" transform="rotate(-90,17,105)">155mm</text>
-          <text x="160" y="193" text-anchor="middle" fill="#8D99A8" font-size="9" font-family="Arial">Front Fork Outer Tube — Technical Drawing</text>
-          <text x="160" y="13" text-anchor="middle" fill="#E8500A" font-size="10" font-weight="bold" font-family="Arial">DIVINESTAMP — PRECISION ENGINEERED</text>
-        </svg>
-      </div>
-      <div class="hvc">
-        <div class="hvc-icon"><svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></div>
-        <div><div class="hvc-title">2× CNC VMC Machines</div><div class="hvc-desc">Advanced Vertical Machining Centers — tight tolerances, superior surface finish</div></div>
-      </div>
-      <div class="hvc">
-        <div class="hvc-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-        <div><div class="hvc-title">Gabriel India — Trusted Supplier</div><div class="hvc-desc">Proud OEM supplier of precision aluminium suspension components</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div>
-        <div class="deco-num">2025</div>
-        <span class="slabel">About Divinestamp</span>
-        <h2 class="stitle">Precision Manufacturing<br>from India's Auto Hub</h2>
-        <div class="sbar"></div>
-        <p class="about-txt">Divinestamp Private Limited is a modern precision aluminium component manufacturing company established in February 2025 in Hosur, Tamil Nadu — one of India's fastest-growing automotive industrial hubs.</p>
-        <p class="about-txt">We specialize in manufacturing <strong>Front Fork Outer Tubes</strong> — critical structural components in two-wheeler front suspension systems — using advanced VMC machining technology and high-grade aluminium alloys.</p>
-        <div class="about-pull"><p>"From raw aluminium to precision-engineered automotive components — every step is driven by engineering excellence and an uncompromising commitment to quality."</p></div>
-        <p class="about-txt">Our Hosur facility runs 2 advanced VMC machines, aluminium boiler processing, and precision forming equipment, operated by a team of 70+ skilled engineers and operators.</p>
-        <div class="leader">
-          <div class="leader-av">PLR</div>
-          <div><div class="leader-name">Mr. PLR Reddy</div><div class="leader-role">Founder & Managing Director — Divinestamp Pvt Ltd</div></div>
-        </div>
-      </div>
-      <div>
-        <div class="mv-grid">
-          <div class="mv"><h3>Mission</h3><p>To manufacture high-quality aluminium components with precision engineering and customer satisfaction as our highest priority.</p></div>
-          <div class="mv"><h3>Vision</h3><p>To establish Divinestamp as a leading aluminium component manufacturer in India, recognized for engineering excellence and trusted OEM partnerships.</p></div>
-        </div>
-        <table class="fact-table">
-          <tr><td>Founded</td><td>February 2025</td></tr>
-          <tr><td>Headquarters</td><td>Hosur, Tamil Nadu 635126</td></tr>
-          <tr><td>Specialization</td><td>Aluminium Front Fork Outer Tubes</td></tr>
-          <tr><td>Manufacturing</td><td>CNC VMC Precision Machining</td></tr>
-          <tr><td>Workforce</td><td>70+ Engineers & Operators</td></tr>
-          <tr><td>Monthly Capacity</td><td>&#8377;1.2 Crore</td></tr>
-          <tr><td>Key Client</td><td>Gabriel India Ltd.</td></tr>
-          <tr><td>Quality Standard</td><td>ISO Certified Manufacturing</td></tr>
-        </table>
-        <div class="chips">
-          <span class="chip">VMC Machining</span><span class="chip">ISO Certified</span><span class="chip">Aluminium Alloy</span><span class="chip">On-Time Delivery</span><span class="chip">OEM Supplier</span><span class="chip">Gabriel Partner</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CAPABILITIES STRIP -->
-<div class="caps">
-  <div style="max-width:1280px;margin:0 auto">
-    <span class="slabel" style="text-align:center;display:block">Why Choose Divinestamp</span>
-    <h2 class="stitle" style="text-align:center;max-width:100%">Four Pillars of Excellence</h2>
-  </div>
-  <div class="caps-grid">
-    <div class="cap-card">
-      <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="26" fill="none" stroke="#EEF1F4" stroke-width="2"/><circle cx="30" cy="30" r="18" fill="none" stroke="#E8500A" stroke-width="1.5"/><circle cx="30" cy="30" r="4" fill="#E8500A"/><line x1="30" y1="12" x2="30" y2="20" stroke="#0D1B2A" stroke-width="1.5"/><line x1="30" y1="40" x2="30" y2="48" stroke="#0D1B2A" stroke-width="1.5"/><line x1="12" y1="30" x2="20" y2="30" stroke="#0D1B2A" stroke-width="1.5"/><line x1="40" y1="30" x2="48" y2="30" stroke="#0D1B2A" stroke-width="1.5"/></svg>
-      <h4>Precision Engineering</h4><p>VMC machining ensures consistent dimensional accuracy across every production batch for demanding OEM applications</p>
-    </div>
-    <div class="cap-card">
-      <svg viewBox="0 0 60 60" width="56" height="56"><line x1="30" y1="10" x2="15" y2="36" stroke="#C5CDD6" stroke-width="1.5"/><line x1="30" y1="10" x2="45" y2="36" stroke="#C5CDD6" stroke-width="1.5"/><line x1="15" y1="36" x2="45" y2="36" stroke="#C5CDD6" stroke-width="1.5"/><line x1="30" y1="36" x2="30" y2="52" stroke="#C5CDD6" stroke-width="1.5"/><circle cx="30" cy="10" r="7" fill="#0D1B2A"/><text x="30" y="14" text-anchor="middle" fill="#E8500A" font-size="8" font-weight="bold">Al</text><circle cx="15" cy="36" r="6" fill="#1A2E44"/><circle cx="45" cy="36" r="6" fill="#1A2E44"/><circle cx="30" cy="52" r="5" fill="#E8500A"/></svg>
-      <h4>High-Grade Aluminium</h4><p>Premium aluminium alloys selected for optimal strength-to-weight ratio, corrosion resistance, and long service life</p>
-    </div>
-    <div class="cap-card">
-      <svg viewBox="0 0 60 60" width="56" height="56"><path d="M30 6 L38 22 L56 24 L43 37 L46 54 L30 46 L14 54 L17 37 L4 24 L22 22 Z" fill="#0D1B2A"/><path d="M21 30 L27 37 L40 23" stroke="#E8500A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <h4>ISO Certified Quality</h4><p>Every component passes strict ISO-certified quality inspection before dispatch to ensure reliability and performance</p>
-    </div>
-    <div class="cap-card">
-      <svg viewBox="0 0 60 60" width="56" height="56"><rect x="6" y="22" width="34" height="22" rx="3" fill="#0D1B2A"/><rect x="40" y="28" width="14" height="16" rx="2" fill="#1A2E44"/><rect x="41" y="30" width="12" height="8" rx="2" fill="#E8500A" opacity=".6"/><circle cx="16" cy="46" r="5" fill="#243B55" stroke="#E8500A" stroke-width="1.5"/><circle cx="16" cy="46" r="2" fill="#E8500A"/><circle cx="42" cy="46" r="5" fill="#243B55" stroke="#E8500A" stroke-width="1.5"/><circle cx="42" cy="46" r="2" fill="#E8500A"/><line x1="3" y1="30" x2="9" y2="30" stroke="#E8500A" stroke-width="1.5" opacity=".6"/><line x1="2" y1="35" x2="7" y2="35" stroke="#E8500A" stroke-width="1" opacity=".4"/><circle cx="21" cy="16" r="7" fill="#E8500A"/><path d="M16 16 L20 21 L28 11" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <h4>On-Time Delivery</h4><p>Reliable production scheduling ensures components reach our clients' production lines exactly when needed</p>
-    </div>
-  </div>
-</div>
-
-<!-- PRODUCTS (DYNAMIC) -->
-<section class="products" id="products">
-  <div class="container">
-    <div class="prod-top">
-      <div>
-        <span class="slabel">Our Products</span>
-        <h2 class="stitle">Front Fork Outer Tubes</h2>
-        <div class="sbar"></div>
-        <p class="sdesc">Precision aluminium Front Fork Outer Tubes — critical structural components in motorcycle front suspension assemblies. Engineered for strength, dimensional accuracy, and long service life.</p>
-      </div>
-      <div class="pf-list">
-        <div class="pf"><div class="pf-dot"></div><div><div class="pf-title">High-Grade Aluminium Alloy</div><div class="pf-desc">Premium alloy for optimal strength-to-weight ratio, corrosion resistance, and machinability</div></div></div>
-        <div class="pf"><div class="pf-dot"></div><div><div class="pf-title">CNC VMC Precision Machining</div><div class="pf-desc">Advanced Vertical Machining Centers ensuring tight tolerances and surface quality consistency</div></div></div>
-        <div class="pf"><div class="pf-dot"></div><div><div class="pf-title">Automotive OEM Grade</div><div class="pf-desc">ISO-certified manufacturing for every component to meet leading automotive OEM standards</div></div></div>
-        <div class="pf"><div class="pf-dot"></div><div><div class="pf-title">Custom Manufacturing</div><div class="pf-desc">We support custom aluminium component development from customer drawings and specifications</div></div></div>
-      </div>
-    </div>
-    <!-- DYNAMIC PRODUCT CARDS rendered by JS -->
-    <div class="prod-grid" id="prod-grid"></div>
-    <!-- DYNAMIC SPEC TABLE -->
-    <div id="spec-table-wrap"></div>
-    <!-- PROCESS STEPS -->
-    <div style="margin-top:48px">
-      <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--navy);margin-bottom:32px">Manufacturing Process Flow</h3>
-      <div class="proc-steps">
-        <div class="pstep"><div class="pstep-n">01</div><div class="pstep-title">Raw Material</div><div class="pstep-desc">High-grade aluminium alloy selection & incoming inspection</div></div>
-        <div class="pstep"><div class="pstep-n">02</div><div class="pstep-title">Boiler Processing</div><div class="pstep-desc">Aluminium heating & pre-forming treatment</div></div>
-        <div class="pstep"><div class="pstep-n">03</div><div class="pstep-title">Shape Forming</div><div class="pstep-desc">Industrial precision shape forming machine</div></div>
-        <div class="pstep"><div class="pstep-n">04</div><div class="pstep-title">VMC Machining</div><div class="pstep-desc">CNC precision machining & surface finish</div></div>
-        <div class="pstep"><div class="pstep-n">05</div><div class="pstep-title">Quality Check</div><div class="pstep-desc">Dimensional & structural inspection</div></div>
-        <div class="pstep"><div class="pstep-n">06</div><div class="pstep-title">Dispatch</div><div class="pstep-desc">Packaging & on-time delivery to client</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- INFRASTRUCTURE -->
-<section class="infra" id="infra">
-  <div class="container">
-    <span class="slabel">Our Facility</span>
-    <h2 class="stitle stitle-w">State-of-the-Art<br>Manufacturing Infrastructure</h2>
-    <div class="sbar"></div>
-    <p class="sdesc sdesc-w">Our Hosur facility is equipped with modern precision machinery and a skilled workforce, designed for consistent quality at high production volumes.</p>
-    <!-- factory floor SVG -->
-    <div style="margin:36px 0;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);padding:28px;border-radius:2px">
-      <svg viewBox="0 0 800 140" width="100%" style="max-height:140px" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0" y="110" width="800" height="30" fill="#1A2E44"/><line x1="0" y1="110" x2="800" y2="110" stroke="#E8500A" stroke-width="1.5"/>
-        <rect x="40" y="52" width="80" height="58" rx="2" fill="#243B55" stroke="#E8500A" stroke-width="1.5"/>
-        <rect x="48" y="36" width="64" height="20" rx="2" fill="#1A2E44" stroke="#8D99A8" stroke-width="1"/>
-        <rect x="58" y="40" width="44" height="12" rx="2" fill="#E8500A" opacity=".8"/>
-        <text x="80" y="50" text-anchor="middle" fill="#fff" font-size="7" font-family="Arial" font-weight="bold">VMC 1</text>
-        <rect x="52" y="64" width="20" height="28" rx="2" fill="#1A2E44"/><rect x="78" y="64" width="20" height="28" rx="2" fill="#1A2E44"/>
-        <rect x="58" y="70" width="6" height="16" rx="1" fill="#E8500A" opacity=".6"/><rect x="84" y="70" width="6" height="16" rx="1" fill="#E8500A" opacity=".6"/>
-        <text x="80" y="126" text-anchor="middle" fill="#E8500A" font-size="8" font-family="Arial">VMC 1</text>
-        <rect x="150" y="52" width="80" height="58" rx="2" fill="#243B55" stroke="#E8500A" stroke-width="1.5"/>
-        <rect x="158" y="36" width="64" height="20" rx="2" fill="#1A2E44" stroke="#8D99A8" stroke-width="1"/>
-        <rect x="168" y="40" width="44" height="12" rx="2" fill="#E8500A" opacity=".8"/>
-        <text x="190" y="50" text-anchor="middle" fill="#fff" font-size="7" font-family="Arial" font-weight="bold">VMC 2</text>
-        <rect x="162" y="64" width="20" height="28" rx="2" fill="#1A2E44"/><rect x="188" y="64" width="20" height="28" rx="2" fill="#1A2E44"/>
-        <rect x="168" y="70" width="6" height="16" rx="1" fill="#E8500A" opacity=".6"/><rect x="194" y="70" width="6" height="16" rx="1" fill="#E8500A" opacity=".6"/>
-        <text x="190" y="126" text-anchor="middle" fill="#E8500A" font-size="8" font-family="Arial">VMC 2</text>
-        <ellipse cx="340" cy="82" rx="30" ry="34" fill="#243B55" stroke="#E8500A" stroke-width="1.5"/>
-        <ellipse cx="340" cy="65" rx="25" ry="12" fill="#1A2E44" stroke="#8D99A8" stroke-width="1"/>
-        <rect x="329" y="47" width="22" height="16" rx="2" fill="#E8500A" opacity=".35"/>
-        <line x1="330" y1="36" x2="327" y2="20" stroke="#8D99A8" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="340" y1="33" x2="340" y2="15" stroke="#8D99A8" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="350" y1="36" x2="353" y2="20" stroke="#8D99A8" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="327" cy="16" r="4" fill="rgba(200,210,220,0.25)"/><circle cx="340" cy="11" r="5" fill="rgba(200,210,220,0.2)"/><circle cx="353" cy="16" r="3" fill="rgba(200,210,220,0.15)"/>
-        <text x="340" y="126" text-anchor="middle" fill="#E8500A" font-size="8" font-family="Arial">Boiler</text>
-        <rect x="440" y="44" width="90" height="66" rx="2" fill="#243B55" stroke="#8D99A8" stroke-width="1.5"/>
-        <rect x="448" y="52" width="74" height="26" rx="2" fill="#1A2E44"/>
-        <rect x="452" y="56" width="26" height="18" rx="2" fill="#E8500A" opacity=".25"/><rect x="483" y="56" width="32" height="18" rx="2" fill="#1A2E44" stroke="#E8500A" stroke-width="1"/>
-        <rect x="448" y="82" width="64" height="16" rx="2" fill="#1A2E44"/>
-        <rect x="452" y="85" width="12" height="10" rx="1" fill="#E8500A" opacity=".7"/><rect x="468" y="85" width="12" height="10" rx="1" fill="#8D99A8" opacity=".4"/><rect x="484" y="85" width="22" height="10" rx="1" fill="#8D99A8" opacity=".4"/>
-        <text x="485" y="126" text-anchor="middle" fill="#E8500A" font-size="8" font-family="Arial">Shape Forming</text>
-        <rect x="600" y="54" width="72" height="56" rx="2" fill="#0D1B2A" stroke="#E8500A" stroke-width="1.5"/>
-        <rect x="610" y="64" width="52" height="30" rx="2" fill="#1A2E44"/>
-        <line x1="616" y1="70" x2="656" y2="70" stroke="#E8500A" stroke-width="1" stroke-dasharray="3,2"/>
-        <line x1="616" y1="78" x2="656" y2="78" stroke="#8D99A8" stroke-width=".5"/><line x1="616" y1="86" x2="656" y2="86" stroke="#8D99A8" stroke-width=".5"/>
-        <path d="M626 78 L632 85 L644 67" stroke="#E8500A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="636" y="126" text-anchor="middle" fill="#E8500A" font-size="8" font-family="Arial">Quality Inspection</text>
-        <text x="242" y="78" text-anchor="middle" fill="#8D99A8" font-size="12">&#8594;</text>
-        <text x="400" y="78" text-anchor="middle" fill="#8D99A8" font-size="12">&#8594;</text>
-        <text x="548" y="78" text-anchor="middle" fill="#8D99A8" font-size="12">&#8594;</text>
-        <text x="400" y="12" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="9" font-family="Arial" letter-spacing="2">DIVINESTAMP MANUFACTURING FLOOR — HOSUR, TAMIL NADU</text>
-      </svg>
-    </div>
-    <div class="infra-layout">
-      <div class="m-list">
-        <h3>Machinery & Equipment</h3>
-        <div class="mach"><div class="micon"><svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></div><div><div class="mname">2× CNC Vertical Machining Centers (VMC)</div><div class="mdesc">Advanced multi-axis machining centers delivering tight dimensional tolerances and consistent part quality across high-volume production runs.</div></div></div>
-        <div class="mach"><div class="micon"><svg viewBox="0 0 24 24"><path d="M17.21 9l-4.38-6.56c-.19-.28-.51-.42-.83-.42-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1h-4.79z"/></svg></div><div><div class="mname">Aluminium Boiler & Melting Furnace</div><div class="mdesc">Specialized industrial heating system for aluminium alloy treatment, ensuring optimal material properties before machining.</div></div></div>
-        <div class="mach"><div class="micon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg></div><div><div class="mname">Precision Shape Forming Machine</div><div class="mdesc">Industrial forming equipment for shaping aluminium to precise engineering specifications before final VMC machining.</div></div></div>
-        <div class="mach"><div class="micon"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div><div><div class="mname">Quality Inspection Equipment</div><div class="mdesc">Precision measuring instruments and calibrated tools for dimensional verification and product certification before dispatch.</div></div></div>
-      </div>
-      <div>
-        <div class="istats">
-          <div class="istat"><div class="istat-v">2</div><div class="istat-l">VMC Machines</div><div class="istat-s">CNC Vertical Machining</div></div>
-          <div class="istat"><div class="istat-v">70<span style="font-size:20px">+</span></div><div class="istat-l">Team Members</div><div class="istat-s">20 Employees · 50 Operators</div></div>
-          <div class="istat"><div class="istat-v">3<span style="font-size:20px">+</span></div><div class="istat-l">Product Models</div><div class="istat-s">U86 · N282 · U244</div></div>
-          <div class="istat"><div class="istat-v" style="font-size:28px;line-height:1.2">ISO</div><div class="istat-l">Certified</div><div class="istat-s">Quality Mgt System</div></div>
-        </div>
-        <div class="cap-blk">
-          <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--silver);margin-bottom:10px">Monthly Production Capacity</div>
-          <div class="cap-v">&#8377;1.2 Crore</div>
-          <div class="cap-s">Manufacturing turnover capacity per month</div>
-          <div class="cap-bar"><div class="cap-fill"></div></div>
-          <div style="display:flex;justify-content:space-between;margin-top:5px;font-size:10px;color:var(--silver)"><span>Current: &#8377;1.2 Cr/month</span><span>Target: &#8377;1.6 Cr/month</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ISO STRIP -->
-<div class="iso-strip">
-  <div class="iso-inner">
-    <div class="iso-badge"><div class="iso-ico"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div><div><div class="iso-title">ISO Certified Manufacturing</div><div class="iso-sub">Quality Management System · Precision Standards</div></div></div>
-    <div class="iso-tags"><span class="iso-tag">ISO Certified</span><span class="iso-tag">VMC Machining</span><span class="iso-tag">OEM Supplier</span><span class="iso-tag">Gabriel India</span><span class="iso-tag">Hosur · Tamil Nadu</span></div>
-  </div>
-</div>
-
-<!-- QUALITY -->
-<section class="quality" id="quality">
-  <div class="container">
-    <span class="slabel">Quality Assurance</span>
-    <h2 class="stitle">Quality & On-Time Delivery<br>Are Our Strength</h2>
-    <div class="sbar"></div>
-    <div class="q-grid">
-      <div class="q-pillars">
-        <div class="qp"><div class="qp-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div><div class="qp-title">ISO Certified Manufacturing</div><div class="qp-desc">Our entire process follows ISO-certified quality management systems at every production stage.</div></div>
-        <div class="qp"><div class="qp-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div><div class="qp-title">Precision Tolerance Control</div><div class="qp-desc">Advanced VMC machining ensures tight tolerances — critical for proper fit in automotive suspension systems.</div></div>
-        <div class="qp"><div class="qp-icon"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div><div class="qp-title">100% Dimensional Inspection</div><div class="qp-desc">Every component undergoes comprehensive dimensional inspection before dispatch using calibrated instruments.</div></div>
-        <div class="qp"><div class="qp-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div><div class="qp-title">On-Time Delivery Commitment</div><div class="qp-desc">Our production planning ensures reliable on-time delivery supporting customers' manufacturing schedules.</div></div>
-      </div>
-      <div class="q-stmt">
-        <div class="q-quote">"Quality and <span>On-Time Delivery</span> Are Our Strength."</div>
-        <ul class="q-checks">
-          <li>ISO Certified Quality Management System</li>
-          <li>Incoming raw material inspection & verification</li>
-          <li>In-process quality control at every stage</li>
-          <li>Final dimensional and surface quality inspection</li>
-          <li>Production batch traceability records</li>
-          <li>Customer feedback integration & continuous improvement</li>
-          <li>Reliable on-time delivery to all OEM partners</li>
+    <header class="topbar">
+      <p class="brand">DivineStamp Industries</p>
+      <nav aria-label="Primary">
+        <ul>
+          <li>About Us</li>
+          <li>Our Team</li>
+          <li>Expertise</li>
+          <li>Careers</li>
+          <li>News</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
+      </nav>
+      <button class="btn btn-contact">Contact</button>
+    </header>
 
-<!-- CLIENTS -->
-<section class="clients" id="clients">
-  <div class="container">
-    <span class="slabel">Our Clients</span>
-    <h2 class="stitle">Trusted by Industry Leaders</h2>
-    <div class="sbar"></div>
-    <div class="cli-grid">
-      <div class="cli-card">
-        <div class="gab-logo"><span class="gab-text">GBL</span></div>
-        <div class="cli-name">Gabriel India Ltd.</div>
-        <div class="cli-cat">Automotive Suspension Manufacturer</div>
-        <div class="cli-desc">One of India's foremost manufacturers of automotive shock absorbers and suspension systems for two-wheelers and commercial vehicles — a benchmark name in Indian automotive quality.</div>
-        <div class="cli-tags"><span class="ctag">Front Fork Outer Tubes</span><span class="ctag">OEM Supplier</span><span class="ctag">Trusted Partner</span></div>
-      </div>
-      <div class="cli-right">
-        <h3>Supplying Precision to India's Automotive Leaders</h3>
-        <p>Divinestamp is a trusted manufacturing partner and supplier of precision aluminium Front Fork Outer Tubes to Gabriel India Ltd., one of the country's leading manufacturers of automotive suspension systems.</p>
-        <p>Our partnership with Gabriel reflects our commitment to delivering components that meet the highest automotive quality standards — on time, every time.</p>
-        <ul class="sup-list">
-          <li>Front Fork Outer Tubes (Models U86, N282, U244) supplied regularly to Gabriel India</li>
-          <li>Consistent product quality meeting Gabriel's OEM engineering standards</li>
-          <li>Reliable production scheduling aligned with customer production timelines</li>
-          <li>ISO-certified manufacturing with full component traceability</li>
-          <li>Growing production capacity to scale with increasing customer demand</li>
-        </ul>
-        <div style="background:var(--navy);padding:20px;border-radius:2px;margin-top:20px"><p style="font-size:13px;color:var(--silver2);line-height:1.7;margin:0">Divinestamp is actively seeking partnerships with additional automotive OEMs and Tier-1 suppliers. Contact us to explore how we can support your manufacturing requirements.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CAREERS (DYNAMIC) -->
-<section class="careers" id="careers">
-  <div class="container">
-    <span class="slabel">Career Opportunities</span>
-    <h2 class="stitle stitle-w">Build Your Career in<br>Precision Manufacturing</h2>
-    <div class="sbar"></div>
-    <p class="sdesc sdesc-w">Join a fast-growing precision engineering company in Hosur, Tamil Nadu. We welcome dedicated professionals passionate about automotive manufacturing excellence.</p>
-    <div class="jobs-grid" id="jobs-grid"></div>
-    <div class="careers-cta">
-      <div><p>Don't see a suitable opening? Send us your resume.</p><span>We welcome talented engineers, operators, and manufacturing professionals.</span></div>
-      <a href="mailto:Divinestamp@gmail.com" class="btn-p">Send Your Resume</a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT / INQUIRY (DYNAMIC) -->
-<section class="contact" id="contact">
-  <div class="container">
-    <span class="slabel">Get In Touch</span>
-    <h2 class="stitle">Request a Quote or Send an Enquiry</h2>
-    <div class="sbar"></div>
-    <div class="cont-grid">
-      <div class="cinfo">
-        <h3>Contact Information</h3>
-        <div class="citem"><div class="cico"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div><div class="citem-label">Address</div><div class="citem-val">Divinestamp Private Limited</div><div class="citem-sub">QQJX+322, 1st Cross Rd, Ezhil Nagar, Begepalli<br>Hosur, Tamil Nadu 635126, India</div></div></div>
-        <div class="citem"><div class="cico"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div><div><div class="citem-label">Phone</div><div class="citem-val">+91 99001 24981</div><div class="citem-sub">Monday – Saturday, 9:00 AM – 6:00 PM</div></div></div>
-        <div class="citem"><div class="cico"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div><div class="citem-label">Email</div><div class="citem-val">Divinestamp@gmail.com</div><div class="citem-sub">We respond within 24 business hours</div></div></div>
-        <div class="citem"><div class="cico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div><div><div class="citem-label">Business Hours</div><div class="citem-val">Mon–Sat: 9:00 AM – 6:00 PM</div><div class="citem-sub">Closed on Sundays and National Holidays</div></div></div>
-        <a href="https://wa.me/919900124981" class="wa-btn"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp Us Now</a>
-        <div class="map-box"><div class="map-inner"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><p>Hosur, Tamil Nadu 635126</p><a href="https://maps.app.goo.gl/vNDxXwGdAHaYuAae8" target="_blank">Open in Google Maps &#8594;</a></div></div>
-      </div>
-      <div class="form-box">
-        <h3>Send an Enquiry</h3>
-        <div class="frow">
-          <div class="fg"><label>Your Name *</label><input type="text" id="f-name" placeholder="Full Name"></div>
-          <div class="fg"><label>Company Name</label><input type="text" id="f-company" placeholder="Company / Organisation"></div>
-        </div>
-        <div class="frow">
-          <div class="fg"><label>Phone *</label><input type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX"></div>
-          <div class="fg"><label>Email *</label><input type="email" id="f-email" placeholder="your@email.com"></div>
-        </div>
-        <div class="fg"><label>Enquiry Type</label><select id="f-type"><option value="">Select Enquiry Type</option><option>Product Enquiry</option><option>Bulk Order</option><option>Vendor Registration</option><option>Career / Job Application</option><option>Other</option></select></div>
-        <div class="frow">
-          <div class="fg"><label>Product Required</label><select id="f-product"><option value="">Select Model</option><option>U86 – Front Fork Outer Tube</option><option>N282 – Front Fork Outer Tube</option><option>U244 – Front Fork Outer Tube</option><option>Custom / Multiple Models</option></select></div>
-          <div class="fg"><label>Quantity Required</label><input type="text" id="f-qty" placeholder="e.g. 500 units/month"></div>
-        </div>
-        <div class="fg"><label>Message / Requirements</label><textarea id="f-msg" placeholder="Describe your requirements, specifications, or questions..."></textarea></div>
-        <button class="fsub" onclick="submitInquiry()">Submit Enquiry — Divinestamp@gmail.com</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div>
-      <img src="data:image/jpeg;base64,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" alt="DSPL Logo" style="height:40px;margin-bottom:10px;display:block">
-      <span class="fbrand-name">DIVINESTAMP PVT LTD</span>
-      <p class="fbrand-desc">Precision aluminium Front Fork Outer Tube manufacturing using advanced VMC machining. ISO-certified manufacturing from Hosur, Tamil Nadu. Trusted OEM supplier.</p>
-      <div class="fbadges"><span class="fbadge">ISO Certified</span><span class="fbadge">Gabriel Supplier</span><span class="fbadge">VMC Machining</span></div>
-    </div>
-    <div class="fcol"><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#about">Leadership</a></li><li><a href="#about">Mission & Vision</a></li><li><a href="#clients">Our Clients</a></li><li><a href="#careers">Careers</a></li></ul></div>
-    <div class="fcol"><h4>Products</h4><ul><li><a href="#products">Front Fork Outer Tubes</a></li><li><a href="#products">Model U86</a></li><li><a href="#products">Model N282</a></li><li><a href="#products">Model U244</a></li><li><a href="#products">Manufacturing Process</a></li></ul></div>
-    <div class="fcol"><h4>Contact</h4><ul><li><a href="tel:+919900124981">+91 99001 24981</a></li><li><a href="mailto:Divinestamp@gmail.com">Divinestamp@gmail.com</a></li><li><a href="https://maps.app.goo.gl/vNDxXwGdAHaYuAae8">Hosur, TN 635126</a></li><li><a href="https://wa.me/919900124981">WhatsApp</a></li><li><a href="#contact">Send Enquiry</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><p>&#169; 2025 Divinestamp Private Limited. All rights reserved. Hosur, Tamil Nadu, India.</p><span style="background:rgba(232,80,10,0.12);border:1px solid rgba(232,80,10,0.2);color:var(--orange);font-size:9px;font-weight:700;letter-spacing:2px;padding:4px 10px;border-radius:2px">ISO CERTIFIED</span></div>
-</footer>
-
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/919900124981" class="wa-float"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-
-<!-- INQUIRY MODAL -->
-<div class="modal-overlay" id="inquiry-modal">
-  <div class="modal">
-    <div class="modal-head"><h3>Quick Enquiry</h3><button class="modal-close" onclick="closeInquiry()">&#215;</button></div>
-    <div class="modal-body">
-      <div class="frow"><div class="fg"><label>Name *</label><input type="text" id="m-name" placeholder="Your full name"></div><div class="fg"><label>Phone *</label><input type="tel" id="m-phone" placeholder="+91 XXXXX XXXXX"></div></div>
-      <div class="fg"><label>Email *</label><input type="email" id="m-email" placeholder="your@email.com" style="width:100%"></div>
-      <div class="fg"><label>Product / Requirement</label><select id="m-product" style="width:100%"><option value="">Select</option><option>U86 – Front Fork Outer Tube</option><option>N282 – Front Fork Outer Tube</option><option>U244 – Front Fork Outer Tube</option><option>Bulk Order</option><option>General Enquiry</option></select></div>
-      <div class="fg"><label>Message</label><textarea id="m-msg" placeholder="Your requirement or question..." style="width:100%;height:70px;background:#fff;border:1px solid var(--silver2);padding:10px;font-size:13px;font-family:Barlow,sans-serif;border-radius:2px;outline:none;resize:vertical"></textarea></div>
-      <button class="fsub" style="margin-top:8px" onclick="submitModal()">Send Enquiry to Divinestamp@gmail.com</button>
-    </div>
-  </div>
-</div>
-
-<!-- ADMIN PANEL -->
-<div class="admin-overlay" id="admin-panel">
-  <div class="admin-panel">
-    <div class="admin-bar">
-      <div class="admin-title"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Divinestamp Admin Panel</div>
-      <button class="admin-close" onclick="closeAdmin()">&#215; Close</button>
-    </div>
-    <div class="admin-body">
-      <!-- DASHBOARD STATS -->
-      <div class="stats-grid" id="admin-stats"></div>
-      <!-- TABS -->
-      <div class="admin-tabs">
-        <button class="atab active" onclick="switchTab('inquiries')">Inquiries &amp; Leads</button>
-        <button class="atab" onclick="switchTab('products')">Product Management</button>
-        <button class="atab" onclick="switchTab('careers')">Career Openings</button>
-        <button class="atab" onclick="switchTab('company')">Company Info</button>
-      </div>
-      <!-- INQUIRIES -->
-      <div class="admin-section active" id="tab-inquiries">
-        <h2>Inquiries &amp; Leads</h2>
-        <div id="inquiry-table"></div>
-      </div>
-      <!-- PRODUCTS -->
-      <div class="admin-section" id="tab-products">
-        <h2>Product Management</h2>
-        <div class="a-form">
-          <h3 id="prod-form-title">Add New Product Model</h3>
-          <input type="hidden" id="edit-prod-id">
-          <div class="a-frow">
-            <div class="a-fg"><label>Model Name *</label><input type="text" id="p-model" placeholder="e.g. U86"></div>
-            <div class="a-fg"><label>Subtitle</label><input type="text" id="p-subtitle" placeholder="e.g. Two-Wheeler Suspension Component"></div>
-            <div class="a-fg"><label>Featured Model</label><select id="p-featured"><option value="false">No</option><option value="true">Yes (Orange header)</option></select></div>
-          </div>
-          <div class="a-frow" style="grid-template-columns:1fr 1fr">
-            <div class="a-fg"><label>Description</label><textarea id="p-desc" placeholder="Product description..."></textarea></div>
-            <div class="a-fg"><label>Features (one per line)</label><textarea id="p-features" placeholder="High-strength aluminium alloy&#10;Precision CNC machining&#10;Excellent corrosion resistance"></textarea></div>
-          </div>
-          <div class="a-frow">
-            <div class="a-fg"><label>Material</label><input type="text" id="p-material" value="High-Grade Aluminium Alloy"></div>
-            <div class="a-fg"><label>Manufacturing</label><input type="text" id="p-mfg" value="CNC VMC Machining"></div>
-            <div class="a-fg"><label>Application</label><input type="text" id="p-app" value="Two-Wheeler Suspension"></div>
-          </div>
-          <div style="display:flex;gap:10px;margin-top:8px">
-            <button class="btn-p" style="font-size:11px;padding:10px 20px" onclick="saveProduct()">Save Product</button>
-            <button class="a-btn" onclick="cancelEditProd()">Cancel</button>
-          </div>
-        </div>
-        <div id="prod-table"></div>
-      </div>
-      <!-- CAREERS -->
-      <div class="admin-section" id="tab-careers">
-        <h2>Career Openings</h2>
-        <div class="a-form">
-          <h3 id="job-form-title">Add New Job Opening</h3>
-          <input type="hidden" id="edit-job-id">
-          <div class="a-frow">
-            <div class="a-fg"><label>Job Title *</label><input type="text" id="j-title" placeholder="e.g. Machine Operator"></div>
-            <div class="a-fg"><label>Type</label><input type="text" id="j-type" value="Full Time · Hosur, TN"></div>
-            <div class="a-fg"><label>Status</label><select id="j-status"><option value="open">Open</option><option value="closed">Closed</option></select></div>
-          </div>
-          <div class="a-frow" style="grid-template-columns:1fr 1fr">
-            <div class="a-fg"><label>Description</label><textarea id="j-desc" placeholder="Job description..."></textarea></div>
-            <div class="a-fg"><label>Skills / Tags (comma separated)</label><textarea id="j-tags" placeholder="VMC Operation, Aluminium Machining, Quality Check"></textarea></div>
-          </div>
-          <div style="display:flex;gap:10px;margin-top:8px">
-            <button class="btn-p" style="font-size:11px;padding:10px 20px" onclick="saveJob()">Save Job</button>
-            <button class="a-btn" onclick="cancelEditJob()">Cancel</button>
-          </div>
-        </div>
-        <div id="jobs-table"></div>
-      </div>
-      <!-- COMPANY INFO -->
-      <div class="admin-section" id="tab-company">
-        <h2>Company Information</h2>
-        <div class="a-form">
-          <h3>Update Company Details</h3>
-          <div class="a-frow">
-            <div class="a-fg"><label>Phone</label><input type="text" id="c-phone" placeholder="+91 99001 24981"></div>
-            <div class="a-fg"><label>Email</label><input type="text" id="c-email" placeholder="Divinestamp@gmail.com"></div>
-            <div class="a-fg"><label>Monthly Capacity</label><input type="text" id="c-cap" placeholder="&#8377;1.2 Crore"></div>
-          </div>
-          <div class="a-frow" style="grid-template-columns:1fr 1fr">
-            <div class="a-fg"><label>Hero Description</label><textarea id="c-herodesc" placeholder="Main hero section description..."></textarea></div>
-            <div class="a-fg"><label>Address</label><textarea id="c-addr" placeholder="Full address..."></textarea></div>
-          </div>
-          <div style="display:flex;gap:10px;margin-top:8px">
-            <button class="btn-p" style="font-size:11px;padding:10px 20px" onclick="saveCompanyInfo()">Save Changes</button>
-          </div>
+    <section class="content">
+      <div class="copy">
+        <p class="eyebrow"><span class="dot"></span>Built to perform</p>
+        <h1>Precision in<br>every process</h1>
+        <p class="sub">Delivering reliable industrial infrastructure with efficiency, safety, and scale for modern manufacturing.</p>
+        <div class="actions">
+          <button class="btn btn-light">About Us</button>
+          <button class="btn btn-ghost">Explore Our Company</button>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-
-<script>
-// ============================================================
-// DIVINESTAMP DYNAMIC ENGINE
-// Data-driven, localStorage-backed — simulates full stack
-// ============================================================
-
-// ---- DEFAULT DATA ----
-const DEFAULT_PRODUCTS = [
-  { id: 1, model: "U86", subtitle: "Two-Wheeler Suspension Component", featured: false, desc: "A precision aluminium suspension component widely used in modern two-wheeler front suspension assemblies. Designed for durability, smooth operation, and reliable performance across diverse road conditions.", features: ["High-strength aluminium alloy construction","Precision CNC VMC machined surfaces","Excellent corrosion resistance","Lightweight and durable design","Automotive OEM grade quality"], material: "High-Grade Aluminium Alloy", mfg: "CNC VMC Machining", app: "Two-Wheeler Suspension" },
-  { id: 2, model: "N282", subtitle: "High-Accuracy Suspension Component", featured: true, desc: "Engineered with high-accuracy machining processes to deliver superior structural strength and long-lasting performance in front fork suspension assemblies for modern motorcycles.", features: ["High dimensional accuracy and repeatability","Smooth precision-ground surface finish","Strong resistance to mechanical stress","Compatible with multiple suspension platforms","Tested for fatigue and long-term durability"], material: "High-Grade Aluminium Alloy", mfg: "CNC VMC Machining", app: "Two-Wheeler Suspension" },
-  { id: 3, model: "U244", subtitle: "High-Performance Suspension Component", featured: false, desc: "A high-performance outer tube designed for advanced motorcycle suspension applications requiring enhanced structural stability, superior shock absorption, and reliable long-term durability.", features: ["Precision-engineered aluminium body","High strength and fatigue resistance","Excellent dimensional consistency","Long service life performance","ISO certified manufacturing process"], material: "High-Grade Aluminium Alloy", mfg: "CNC VMC Machining", app: "Two-Wheeler Suspension" }
-];
-
-const DEFAULT_JOBS = [
-  { id: 1, title: "Machine Operator", type: "Full Time · Hosur, TN", status: "open", desc: "Operate and maintain aluminium machining equipment to produce precision front fork outer tube components. Ensure production targets and quality standards are consistently met.", tags: "VMC Operation,Aluminium Machining,Quality Check" },
-  { id: 2, title: "VMC Programmer", type: "Full Time · Hosur, TN", status: "open", desc: "Develop and optimize CNC programs for Vertical Machining Centers. Work with engineering teams to achieve tight tolerances and efficient production cycles.", tags: "CNC Programming,G-Code / M-Code,CAM Software" },
-  { id: 3, title: "Quality Inspector", type: "Full Time · Hosur, TN", status: "open", desc: "Conduct dimensional inspection, incoming material checks, and final product verification to ensure all components meet ISO quality standards before delivery to OEM customers.", tags: "Dimensional Inspection,ISO Standards,Quality Control" }
-];
-
-const DEFAULT_COMPANY = { phone: "+91 99001 24981", email: "Divinestamp@gmail.com", cap: "₹1.2 Crore", herodesc: "Divinestamp manufactures high-precision aluminium Front Fork Outer Tubes for two-wheeler suspension systems using advanced VMC machining. Trusted by Gabriel India — delivered on time, every time.", addr: "QQJX+322, 1st Cross Rd, Ezhil Nagar, Begepalli, Hosur, Tamil Nadu 635126" };
-
-// ---- STATE ----
-function getDB(key, def) { try { const v = localStorage.getItem('dspl_' + key); return v ? JSON.parse(v) : def; } catch(e) { return def; } }
-function setDB(key, val) { try { localStorage.setItem('dspl_' + key, JSON.stringify(val)); } catch(e) {} }
-
-function getProducts() { return getDB('products', DEFAULT_PRODUCTS); }
-function getJobs() { return getDB('jobs', DEFAULT_JOBS); }
-function getInquiries() { return getDB('inquiries', []); }
-function getCompany() { return getDB('company', DEFAULT_COMPANY); }
-
-// ---- NOTIFY TOAST ----
-function notify(msg, type = '') {
-  const n = document.getElementById('notify');
-  n.textContent = msg;
-  n.className = 'notify show ' + type;
-  setTimeout(() => { n.className = 'notify'; }, 3500);
-}
-
-// ---- RENDER PRODUCTS ----
-function renderProducts() {
-  const prods = getProducts();
-  const grid = document.getElementById('prod-grid');
-  if (!grid) return;
-  grid.innerHTML = prods.map(p => `
-    <div class="pc">
-      <div class="pc-head ${p.featured ? 'featured' : ''}">
-        <div class="pc-tag">Model · Front Fork Outer Tube</div>
-        <div class="pc-model">${p.model}</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:5px">${p.subtitle}</div>
-      </div>
-      <div style="padding:16px;background:#f8fafc;border-bottom:1px solid #EEF1F4;text-align:center">
-        <svg viewBox="0 0 140 80" width="100%" style="max-height:70px" xmlns="http://www.w3.org/2000/svg">
-          <rect x="38" y="4" width="16" height="72" rx="4" fill="#1A2E44" stroke="#E8500A" stroke-width="1.2"/>
-          <rect x="42" y="8" width="8" height="64" rx="3" fill="#243B55"/>
-          <rect x="38" y="16" width="16" height="3" rx="1" fill="#E8500A" opacity=".8"/>
-          <rect x="38" y="40" width="16" height="2" rx="1" fill="#E8500A" opacity=".5"/>
-          <rect x="38" y="62" width="16" height="3" rx="1" fill="#E8500A" opacity=".8"/>
-          <rect x="86" y="4" width="16" height="72" rx="4" fill="#1A2E44" stroke="#E8500A" stroke-width="1.2"/>
-          <rect x="90" y="8" width="8" height="64" rx="3" fill="#243B55"/>
-          <rect x="86" y="16" width="16" height="3" rx="1" fill="#E8500A" opacity=".8"/>
-          <rect x="86" y="40" width="16" height="2" rx="1" fill="#E8500A" opacity=".5"/>
-          <rect x="86" y="62" width="16" height="3" rx="1" fill="#E8500A" opacity=".8"/>
-          <rect x="54" y="12" width="32" height="56" rx="3" fill="${p.featured ? 'rgba(232,80,10,0.15)' : 'rgba(141,153,168,0.2)'}"/>
-          <text x="70" y="76" text-anchor="middle" fill="#8D99A8" font-size="7" font-family="Arial">${p.model}</text>
-        </svg>
-      </div>
-      <div class="pc-body">
-        <p class="pc-desc">${p.desc}</p>
-        <ul class="pc-feats">${p.features.map(f => `<li>${f}</li>`).join('')}</ul>
-        <div style="margin-top:14px;padding-top:12px;border-top:1px solid #EEF1F4">
-          <span style="background:rgba(232,80,10,0.1);color:#E8500A;font-size:9px;font-weight:700;padding:3px 8px;border-radius:2px;letter-spacing:.5px">Automotive · Two-Wheeler · Suspension</span>
-        </div>
-      </div>
-    </div>
-  `).join('');
-
-  // spec table
-  const wrap = document.getElementById('spec-table-wrap');
-  if (wrap) {
-    wrap.innerHTML = `<table class="spec-table"><thead><tr><th>Specification</th>${prods.map(p => `<th>${p.model}</th>`).join('')}</tr></thead><tbody>
-      <tr><td><strong>Component Type</strong></td>${prods.map(() => '<td>Front Fork Outer Tube</td>').join('')}</tr>
-      <tr><td><strong>Material</strong></td>${prods.map(p => `<td>${p.material}</td>`).join('')}</tr>
-      <tr><td><strong>Manufacturing</strong></td>${prods.map(p => `<td>${p.mfg}</td>`).join('')}</tr>
-      <tr><td><strong>Application</strong></td>${prods.map(p => `<td>${p.app}</td>`).join('')}</tr>
-      <tr><td><strong>Quality Standard</strong></td>${prods.map(() => '<td>ISO Certified</td>').join('')}</tr>
-      <tr><td><strong>Manufacturing Location</strong></td>${prods.map(() => '<td>Hosur, Tamil Nadu</td>').join('')}</tr>
-    </tbody></table>`;
-  }
-}
-
-// ---- RENDER JOBS ----
-function renderJobs() {
-  const jobs = getJobs().filter(j => j.status === 'open');
-  const grid = document.getElementById('jobs-grid');
-  if (!grid) return;
-  grid.innerHTML = jobs.length === 0
-    ? `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--silver)">No open positions at this time. Send your resume to Divinestamp@gmail.com</div>`
-    : jobs.map(j => `
-      <div class="jcard">
-        <div class="jtype">${j.type}</div>
-        <div class="jtitle">${j.title}</div>
-        <p class="jdesc">${j.desc}</p>
-        <div class="jtags">${j.tags.split(',').map(t => `<span class="jtag">${t.trim()}</span>`).join('')}</div>
-        <button class="japply" onclick="openInquiry('Career / Job Application','${j.title}')">Apply Now</button>
-      </div>
-    `).join('');
-}
-
-// ---- INQUIRY SUBMIT (main form) ----
-function submitInquiry() {
-  const name = document.getElementById('f-name').value.trim();
-  const phone = document.getElementById('f-phone').value.trim();
-  const email = document.getElementById('f-email').value.trim();
-  if (!name || !phone || !email) { notify('Please fill in Name, Phone and Email fields.', 'error'); return; }
-  saveInquiryRecord({
-    name, phone, email,
-    company: document.getElementById('f-company').value.trim(),
-    type: document.getElementById('f-type').value,
-    product: document.getElementById('f-product').value,
-    qty: document.getElementById('f-qty').value.trim(),
-    msg: document.getElementById('f-msg').value.trim()
-  });
-  ['f-name','f-company','f-phone','f-email','f-type','f-product','f-qty','f-msg'].forEach(id => { const el = document.getElementById(id); if(el) el.value = ''; });
-  notify('✓ Enquiry submitted! We will contact you at ' + email + ' within 24 hours.', 'success');
-}
-
-// ---- INQUIRY MODAL ----
-function openInquiry(type, product) {
-  document.getElementById('inquiry-modal').classList.add('open');
-  if (type) { const s = document.getElementById('m-product'); if(s) { for(let i=0;i<s.options.length;i++) if(s.options[i].value.includes(product || type)) { s.selectedIndex=i; break; } } }
-}
-function closeInquiry() { document.getElementById('inquiry-modal').classList.remove('open'); }
-function submitModal() {
-  const name = document.getElementById('m-name').value.trim();
-  const phone = document.getElementById('m-phone').value.trim();
-  const email = document.getElementById('m-email').value.trim();
-  if (!name || !phone || !email) { notify('Please fill Name, Phone and Email.', 'error'); return; }
-  saveInquiryRecord({ name, phone, email, company: '', type: document.getElementById('m-product').value, product: document.getElementById('m-product').value, qty: '', msg: document.getElementById('m-msg').value.trim() });
-  closeInquiry();
-  notify('✓ Enquiry received! Our team will contact you within 24 hours.', 'success');
-}
-function saveInquiryRecord(data) {
-  const inqs = getInquiries();
-  inqs.unshift({ ...data, id: Date.now(), date: new Date().toLocaleString('en-IN'), status: 'new' });
-  setDB('inquiries', inqs);
-  renderAdminStats();
-  if (document.getElementById('tab-inquiries').classList.contains('active')) renderInquiryTable();
-}
-
-// ---- ADMIN ----
-function openAdmin() { document.getElementById('admin-panel').classList.add('open'); renderAdminStats(); renderInquiryTable(); renderAdminProducts(); renderAdminJobs(); loadCompanyForm(); }
-function closeAdmin() { document.getElementById('admin-panel').classList.remove('open'); }
-
-function renderAdminStats() {
-  const inqs = getInquiries();
-  const newCount = inqs.filter(i => i.status === 'new').length;
-  const prods = getProducts().length;
-  const jobs = getJobs().filter(j => j.status === 'open').length;
-  const el = document.getElementById('admin-stats');
-  if (!el) return;
-  el.innerHTML = `
-    <div class="stat-card"><div class="sv">${inqs.length}</div><div class="sl">Total Inquiries</div></div>
-    <div class="stat-card" style="border-top-color:var(--success)"><div class="sv" style="color:var(--success)">${newCount}</div><div class="sl">New / Unread</div></div>
-    <div class="stat-card"><div class="sv">${prods}</div><div class="sl">Product Models</div></div>
-    <div class="stat-card" style="border-top-color:var(--navy2)"><div class="sv">${jobs}</div><div class="sl">Open Positions</div></div>
-  `;
-}
-
-function switchTab(tab) {
-  document.querySelectorAll('.atab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.admin-section').forEach(s => s.classList.remove('active'));
-  document.getElementById('tab-' + tab).classList.add('active');
-  event.target.classList.add('active');
-  if (tab === 'inquiries') renderInquiryTable();
-  if (tab === 'products') renderAdminProducts();
-  if (tab === 'careers') renderAdminJobs();
-  if (tab === 'company') loadCompanyForm();
-}
-
-// ---- INQUIRY TABLE ----
-function renderInquiryTable() {
-  const inqs = getInquiries();
-  const el = document.getElementById('inquiry-table');
-  if (!el) return;
-  if (inqs.length === 0) { el.innerHTML = '<p style="color:var(--t3);padding:20px 0">No inquiries yet. Inquiries submitted via the website will appear here.</p>'; return; }
-  el.innerHTML = `<table class="a-table">
-    <thead><tr><th>#</th><th>Name</th><th>Phone</th><th>Email</th><th>Product</th><th>Message</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
-    <tbody>${inqs.map((inq, i) => `
-      <tr>
-        <td style="color:var(--t3);font-size:11px">${inqs.length - i}</td>
-        <td><strong style="color:var(--navy)">${inq.name}</strong>${inq.company ? `<br><span style="font-size:11px;color:var(--t3)">${inq.company}</span>` : ''}</td>
-        <td><a href="tel:${inq.phone}" style="color:var(--orange);text-decoration:none">${inq.phone}</a></td>
-        <td><a href="mailto:${inq.email}" style="color:var(--orange);text-decoration:none;font-size:12px">${inq.email}</a></td>
-        <td style="font-size:12px">${inq.product || inq.type || '—'}</td>
-        <td style="font-size:12px;max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${inq.msg || '—'}</td>
-        <td style="font-size:11px;white-space:nowrap">${inq.date}</td>
-        <td><span class="a-badge badge-${inq.status === 'new' ? 'new' : inq.status === 'read' ? 'read' : 'pend'}">${inq.status}</span></td>
-        <td style="display:flex;gap:6px">
-          <button class="a-btn" onclick="markInquiry(${inq.id},'read')" title="Mark read">&#10003;</button>
-          <button class="a-btn danger" onclick="deleteInquiry(${inq.id})" title="Delete">&#215;</button>
-        </td>
-      </tr>`).join('')}
-    </tbody>
-  </table>`;
-}
-function markInquiry(id, status) {
-  const inqs = getInquiries();
-  const idx = inqs.findIndex(i => i.id === id);
-  if (idx > -1) { inqs[idx].status = status; setDB('inquiries', inqs); renderInquiryTable(); renderAdminStats(); notify('Status updated.', 'success'); }
-}
-function deleteInquiry(id) {
-  if (!confirm('Delete this inquiry?')) return;
-  setDB('inquiries', getInquiries().filter(i => i.id !== id)); renderInquiryTable(); renderAdminStats(); notify('Deleted.', '');
-}
-
-// ---- PRODUCT ADMIN ----
-function renderAdminProducts() {
-  const prods = getProducts();
-  const el = document.getElementById('prod-table');
-  if (!el) return;
-  el.innerHTML = `<table class="a-table">
-    <thead><tr><th>Model</th><th>Subtitle</th><th>Material</th><th>Featured</th><th>Actions</th></tr></thead>
-    <tbody>${prods.map(p => `
-      <tr>
-        <td><strong style="font-family:'Barlow Condensed',sans-serif;font-size:18px;color:var(--navy)">${p.model}</strong></td>
-        <td style="font-size:12px">${p.subtitle}</td>
-        <td style="font-size:12px">${p.material}</td>
-        <td>${p.featured ? '<span class="a-badge badge-feat">Featured</span>' : '<span style="color:var(--t3);font-size:11px">—</span>'}</td>
-        <td style="display:flex;gap:6px">
-          <button class="a-btn" onclick="editProduct(${p.id})">Edit</button>
-          <button class="a-btn danger" onclick="deleteProduct(${p.id})">Delete</button>
-        </td>
-      </tr>`).join('')}
-    </tbody>
-  </table>`;
-}
-function saveProduct() {
-  const model = document.getElementById('p-model').value.trim();
-  if (!model) { notify('Model name is required.', 'error'); return; }
-  const prods = getProducts();
-  const editId = document.getElementById('edit-prod-id').value;
-  const prod = { id: editId ? Number(editId) : Date.now(), model, subtitle: document.getElementById('p-subtitle').value.trim(), featured: document.getElementById('p-featured').value === 'true', desc: document.getElementById('p-desc').value.trim(), features: document.getElementById('p-features').value.trim().split('\n').filter(f => f.trim()), material: document.getElementById('p-material').value.trim(), mfg: document.getElementById('p-mfg').value.trim(), app: document.getElementById('p-app').value.trim() };
-  if (editId) { const idx = prods.findIndex(p => p.id === Number(editId)); if (idx > -1) prods[idx] = prod; }
-  else prods.push(prod);
-  setDB('products', prods);
-  renderProducts();
-  renderAdminProducts();
-  cancelEditProd();
-  notify('✓ Product saved and live on website.', 'success');
-}
-function editProduct(id) {
-  const p = getProducts().find(p => p.id === id);
-  if (!p) return;
-  document.getElementById('edit-prod-id').value = id;
-  document.getElementById('p-model').value = p.model;
-  document.getElementById('p-subtitle').value = p.subtitle;
-  document.getElementById('p-featured').value = String(p.featured);
-  document.getElementById('p-desc').value = p.desc;
-  document.getElementById('p-features').value = p.features.join('\n');
-  document.getElementById('p-material').value = p.material;
-  document.getElementById('p-mfg').value = p.mfg;
-  document.getElementById('p-app').value = p.app;
-  document.getElementById('prod-form-title').textContent = 'Edit Product: ' + p.model;
-  document.getElementById('p-model').focus();
-  document.getElementById('tab-products').scrollTop = 0;
-}
-function deleteProduct(id) {
-  if (!confirm('Delete this product model?')) return;
-  setDB('products', getProducts().filter(p => p.id !== id));
-  renderProducts(); renderAdminProducts(); renderAdminStats();
-  notify('Product deleted.', '');
-}
-function cancelEditProd() {
-  ['edit-prod-id','p-model','p-subtitle','p-desc','p-features'].forEach(id => { const el = document.getElementById(id); if(el) el.value = ''; });
-  document.getElementById('p-featured').value = 'false';
-  document.getElementById('p-material').value = 'High-Grade Aluminium Alloy';
-  document.getElementById('p-mfg').value = 'CNC VMC Machining';
-  document.getElementById('p-app').value = 'Two-Wheeler Suspension';
-  document.getElementById('prod-form-title').textContent = 'Add New Product Model';
-}
-
-// ---- JOBS ADMIN ----
-function renderAdminJobs() {
-  const jobs = getJobs();
-  const el = document.getElementById('jobs-table');
-  if (!el) return;
-  el.innerHTML = `<table class="a-table">
-    <thead><tr><th>Job Title</th><th>Type</th><th>Skills</th><th>Status</th><th>Actions</th></tr></thead>
-    <tbody>${jobs.map(j => `
-      <tr>
-        <td><strong style="color:var(--navy)">${j.title}</strong></td>
-        <td style="font-size:12px">${j.type}</td>
-        <td style="font-size:11px;max-width:200px">${j.tags}</td>
-        <td><span class="a-badge ${j.status === 'open' ? 'badge-new' : 'badge-read'}">${j.status}</span></td>
-        <td style="display:flex;gap:6px">
-          <button class="a-btn" onclick="editJob(${j.id})">Edit</button>
-          <button class="a-btn danger" onclick="deleteJob(${j.id})">Delete</button>
-        </td>
-      </tr>`).join('')}
-    </tbody>
-  </table>`;
-}
-function saveJob() {
-  const title = document.getElementById('j-title').value.trim();
-  if (!title) { notify('Job title is required.', 'error'); return; }
-  const jobs = getJobs();
-  const editId = document.getElementById('edit-job-id').value;
-  const job = { id: editId ? Number(editId) : Date.now(), title, type: document.getElementById('j-type').value.trim(), status: document.getElementById('j-status').value, desc: document.getElementById('j-desc').value.trim(), tags: document.getElementById('j-tags').value.trim() };
-  if (editId) { const idx = jobs.findIndex(j => j.id === Number(editId)); if (idx > -1) jobs[idx] = job; }
-  else jobs.push(job);
-  setDB('jobs', jobs);
-  renderJobs(); renderAdminJobs(); cancelEditJob();
-  notify('✓ Job opening saved and live on website.', 'success');
-}
-function editJob(id) {
-  const j = getJobs().find(j => j.id === id);
-  if (!j) return;
-  document.getElementById('edit-job-id').value = id;
-  document.getElementById('j-title').value = j.title;
-  document.getElementById('j-type').value = j.type;
-  document.getElementById('j-status').value = j.status;
-  document.getElementById('j-desc').value = j.desc;
-  document.getElementById('j-tags').value = j.tags;
-  document.getElementById('job-form-title').textContent = 'Edit Job: ' + j.title;
-}
-function deleteJob(id) {
-  if (!confirm('Delete this job opening?')) return;
-  setDB('jobs', getJobs().filter(j => j.id !== id));
-  renderJobs(); renderAdminJobs();
-  notify('Job deleted.', '');
-}
-function cancelEditJob() {
-  ['edit-job-id','j-title','j-desc','j-tags'].forEach(id => { const el = document.getElementById(id); if(el) el.value = ''; });
-  document.getElementById('j-type').value = 'Full Time · Hosur, TN';
-  document.getElementById('j-status').value = 'open';
-  document.getElementById('job-form-title').textContent = 'Add New Job Opening';
-}
-
-// ---- COMPANY INFO ----
-function loadCompanyForm() {
-  const c = getCompany();
-  ['phone','email','cap','herodesc','addr'].forEach(k => {
-    const el = document.getElementById('c-' + k);
-    if (el) el.value = c[k] || '';
-  });
-}
-function saveCompanyInfo() {
-  const c = { phone: document.getElementById('c-phone').value.trim(), email: document.getElementById('c-email').value.trim(), cap: document.getElementById('c-cap').value.trim(), herodesc: document.getElementById('c-herodesc').value.trim(), addr: document.getElementById('c-addr').value.trim() };
-  setDB('company', c);
-  // Update live elements
-  const hd = document.getElementById('hero-desc');
-  if (hd && c.herodesc) hd.textContent = c.herodesc;
-  notify('✓ Company info updated and applied live!', 'success');
-}
-
-// ---- ACTIVE NAV ----
-function updateActiveNav() {
-  const sections = ['home','about','products','infra','quality','clients','careers','contact'];
-  const links = document.querySelectorAll('.nlinks a');
-  let current = 'home';
-  sections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el && window.scrollY >= el.offsetTop - 100) current = id;
-  });
-  links.forEach(a => {
-    a.classList.remove('active');
-    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
-  });
-}
-
-// ---- INIT ----
-document.addEventListener('DOMContentLoaded', () => {
-  renderProducts();
-  renderJobs();
-  // Load company info to live elements
-  const c = getCompany();
-  const hd = document.getElementById('hero-desc');
-  if (hd && c.herodesc) hd.textContent = c.herodesc;
-  // Smooth active nav
-  window.addEventListener('scroll', updateActiveNav, { passive: true });
-  updateActiveNav();
-  // Close modal on overlay click
-  document.getElementById('inquiry-modal').addEventListener('click', function(e) {
-    if (e.target === this) closeInquiry();
-  });
-  // Keyboard escape
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closeInquiry(); closeAdmin(); }
-  });
-  // Counter animation for hero stats
-  animateCounters();
-});
-
-function animateCounters() {
-  const prods = getProducts().length;
-  document.getElementById('stat-models').textContent = prods + '+';
-}
-</script>
+    </section>
+  </main>
 </body>
 </html>
